@@ -1,4 +1,5 @@
 # mind-Mapping 前端学习的思维导图
+前端各个知识点的思维导图分享
 ## ES6
   - 概述
     - ES、JS、NodeJS的区别
