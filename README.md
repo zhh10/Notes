@@ -1,7 +1,7 @@
 # mind-Mapping 前端学习的思维导图
 
 前端JS、ES6、CSS3、HTML5、模块化、包管理器等知识点的思维导图分享
-
+[]('https://images.pexels.com/photos/247791/pexels-photo-247791.png?cs=srgb&dl=view-of-airport-247791.jpg&fm=jpg')
 ## JavaScript
   - 变量声明var和赋值
   - 数据类型
