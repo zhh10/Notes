@@ -1,5 +1,82 @@
 # mind-Mapping 前端学习的思维导图
-前端各个知识点的思维导图分享
+
+前端JS、ES6、CSS3、HTML5、模块化、包管理器等知识点的思维导图分享
+
+## JavaScript
+  - 变量声明var和赋值
+  - 数据类型
+  - typeof
+  - 数组
+    - 类数组
+  - 运算符
+    - 比较运算符
+    - 逻辑运算符
+  - 类型转换
+    - 隐式类型转换
+    - 显式类型转换
+  - 函数
+  - 预编译
+  - 作用域
+  - 闭包
+  - 立即执行函数
+  - 对象
+  - 包装类
+  - 原型
+    - 原型链
+    - this指向
+  - 继承
+    - 传统原型链继承
+    - 借用构造函数
+    - 共享原型
+    - 圣杯模式
+  - 对象的枚举
+    - for-in 
+    - hasOwnProperty 
+    - instanceof
+  - this指向
+  - arguments
+  - 克隆
+    - 浅层克隆
+    - 深层克隆
+  - try-catch 
+    - e.message
+    - e.error
+    - e.name 
+  - ES5严格模式
+    - use strict 
+    - 禁用
+      - 禁用function.callee\caller
+      - 变量赋值之前必须先声明
+      - 拒绝重复属性和参数
+      - 全局作用域下this等于undefined
+  - DOM操作
+    - 增
+    - 删
+    - 改
+    - 查
+    - Element节点
+  - Date
+    - 方法
+    - 定时器
+  - DOM基本操作
+  - 脚本化CSS
+  - 事件
+  - 事件处理模型
+    - 冒泡
+    - 捕获
+  - 事件对象
+    - 事件源对象
+    - 事件委托
+  - 事件分类
+    - 鼠标
+    - 键盘
+    - 移动端
+    - 文本操作
+    - 窗口操作
+  - JSON
+  - 异步加载JS
+  - RegExp正则表达式
+
 ## ES6
   - 概述
     - ES、JS、NodeJS的区别
