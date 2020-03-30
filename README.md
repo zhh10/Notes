@@ -1,7 +1,43 @@
 # mind-Mapping 前端学习的思维导图
 
 前端JS、ES6、CSS3、HTML5、模块化、包管理器等知识点的思维导图分享
-
+## CSS3 
+  - Selection 
+    - Relationship Selectors
+    - Attribute Selectors
+    - Pseudo-Element Selectors
+    - Pseudo-Chinese Selectors
+  - border
+    - border-radius
+    - box-shadow 
+    - border-image 
+  - background 
+    - background-image 
+    - background-size
+    - background-repeat 
+    - background-position
+    - background-origin
+    - background-clip
+    - background-attachment 
+    - liner-gradient 
+    - radial-gradient 
+  - text 
+    - text-shadow 
+    - white-space 
+    - word-break
+    - text-ident/vertical-align/line-heihgt 
+    - columns
+  - 盒模型
+    - W3C标准模型
+    - IE6怪异模型
+  - overflow 
+  - transition 
+  - flex
+  - animation
+  - transform 
+  - translate及perspective
+  - 响应式布局
+    - 媒体查询
 ## JavaScript
   - 变量声明var和赋值
   - 数据类型
