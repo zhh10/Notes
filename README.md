@@ -192,3 +192,78 @@
     - 基本导入导出
     - 默认导入导出
     - 基本导出与默认导出的不同
+## Webpack 
+  - Webpack核心功能
+    - 在浏览器端实现模块化
+    - 模块化兼容性
+      - Webpack同时兼容ES6模块化以及CommonJS
+    - 编译结果分析
+      - 使用立即执行函数，避免全局污染
+      - 将对象作为变量，key为代码文件的路径
+      - eval里的代码会放在另一个环境中去执行
+    - 配置文件
+      - 配置文件通过modules.exports导出（因为要运行文件，而webpack在node环境中） 
+      - 设置配置文件
+        - 默认webpack.config.js
+        - npx webpack --config xx.js
+      - 相关配置属性
+        - mode
+        - entry
+        - output 
+    - devtool配置
+      - source map源码地图
+    - 编译过程
+      - 初始化
+      - 编译
+        - 创建chunk
+        - 模块记录
+          - 从入口模块开始
+          - 检查缓存记录
+          - 进行语法分析（此时不运行文件） 
+          - AST抽象语法树分析
+          - 保存在dependencies中
+          - 替换依赖函数
+          - 保存转换后的模块代
+          - 根据dependencies的内容递归加载模块
+        - 产生chunk assets资源列表
+        - 合并chunk assets
+    - 入口与出口
+      - path 
+      - entry
+      - output 
+        - [] 命名规则
+        - 使用[hash]、[chunkhash] 解决缓存问题
+    - loader
+      - loader本质是一个函数，功能为转换成JS代码
+      - 在AST之前调用
+      - 从上到下匹配，从后到前执行
+      - 使用CommonJS,因为在node环境中，要运行
+    - plugin 
+      - 将功能嵌入到webpack编译流程中
+      - compiler对象，内部创建compilation
+    - 区分环境
+  - 常用扩展
+    - 清除输出目录
+      - clean-webpack-plugin
+    - 自动生成页面
+      - html-webpack-plugin 
+    - 复制静态资源
+      - copy-webpack-plugin 
+    - 开发服务器
+      - webpack-dev-server 
+    - 普通文件处理 
+      - file-loader
+      - url-loader 
+    - 解决路径问题
+      - pluginPath 
+        - 本质是一个字符串
+        - __webpack__require_p (一些loader和plugin会用到)
+    - webpack内置插件
+      - DefinePlugin 
+      - BannerPlugin 
+      - PrividePlugin 
+  - CSS工程化
+    - 概述
+      - 解决类名冲突
+      - 解决重复样式
+      - 解决CSS文件细分问题
