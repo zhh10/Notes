@@ -47,15 +47,26 @@ border-box:box-sizing
 - `alt`: 图片的代替文字
 - `title`: 图片的解析文字
 
-### 8. 什么是`BFC`
-
-### 9. CSS如何画一个三角形
-
-### 10. 对浏览器内核的理解
+### 8. CSS如何画一个三角形
+```
+<style>
+  #app{
+    width:0;
+    height:0;
+    border:100px solid black;
+    border-color:transparent transparent black black;
+  }
+</style>
+<body>
+  <div id='app'></div>
+</body>
+```
+### 9. 对浏览器内核的理解
 主要分成两部分：
 1. 渲染引擎
 2. JS执行引擎
 - 渲染引擎: 负责取得html、img、css，以及计算网页的显示方式，然后输出至显示器。由于不同内核对网页的语法解释会有不同，所以渲染的效果也不相同
 - JS执行引擎: 解释和执行JS来实现网页的动态效果
 
-### 11. 
+### 10. 什么是BFC
+
