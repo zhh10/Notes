@@ -12,6 +12,7 @@
 ### JavaScript
 - [JavaScript思维导图](https://github.com/zhh10/mind-Mapping/blob/master/JavaScript.xmind)
 - [ES6思维导图](https://github.com/zhh10/mind-Mapping/blob/master/ES6.xmind)
+- [四种判断数据类型的方法](https://github.com/zhh10/mind-Mapping/blob/master/%E5%9B%9B%E7%A7%8D%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%B9%E6%B3%95.md)
 - Js面试题
 
 ### JQuery 
