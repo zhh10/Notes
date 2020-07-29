@@ -25,6 +25,8 @@
 
 ### Webpack
 - [webpack思维导图](https://github.com/zhh10/mind-Mapping/blob/master/Webpack.xmind)
+- [loader与plugin](https://github.com/zhh10/Notes/blob/master/loader%E4%B8%8Eplugin.md)
+- webpack面试题
 
 ### TypeScript
 - [TypeScript思维导图](https://github.com/zhh10/mind-Mapping/blob/master/typescript.xmind)
