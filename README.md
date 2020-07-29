@@ -37,7 +37,7 @@
 
 ### 模块化
 - [模块化思维导图](https://github.com/zhh10/mind-Mapping/blob/master/%E6%A8%A1%E5%9D%97%E5%8C%96.xmind)
-- commonJS与ES6模块化的区别
+- [commonJS与ES6模块化的区别](https://github.com/zhh10/Notes/blob/master/commonJS%E4%B8%8EES6%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
 ### Vue.js
 - [Vue思维导图](https://github.com/zhh10/mind-Mapping/blob/master/Vue.js.xmind)
