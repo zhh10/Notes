@@ -4,6 +4,7 @@
 
 ### HTML
 - [HTML/CSS面试题](https://github.com/zhh10/mind-Mapping/blob/master/HTML%EF%BD%9CCSS%E9%9D%A2%E8%AF%95%E9%A2%98.md)
+- [页面性能优化](https://github.com/zhh10/Notes/blob/master/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md)
 
 ### CSS
 - [CSS3思维导图](https://github.com/zhh10/mind-Mapping/blob/master/CSS3.xmind)
