@@ -18,40 +18,37 @@ h1.page-header{
 ```
 ### 嵌套 Nesting
 ```
-.nav{
-    height:100px;
-    ul{
-        margin:0;
-        li{
-            float:left;
-            list-style:none;
-            padding:5px;
-        }
+.foo{
+    display:block;
+    button{
+        height:100px;
     }
+}
+
+// 翻译成css
+.foo{
+    display:block;
+}
+.foo button{
+    height:100px;
 }
 ```
 ### 嵌套时调用父选择器
 - &符号
 ```
-.nav{
-    height:100px;
-    ul{
-        margin:0;
-        li{
-            float:left;
-            list-style:none;
-            padding:5px;
-            a{
-                display:block;
-                color:#000;
-                padding:5px;
-                &:hover{
-                    background-color:#0d2f7e;
-                    color:#fff;
-                }
-            }
-        }
+#app{
+    display:block;
+    &.foo{
+        height:100px;
     }
+}
+
+// 翻译成css 
+#app{
+    display:block
+}
+#app.foo{
+    height:100px;
 }
 ```
 ### 嵌套属性
@@ -67,6 +64,31 @@ body{
         left:0;
         right:0;
     }
+}
+```
+### @at-root 不会让你的选择器发生任何嵌套，直接移除了父选择
+```
+.foo {
+    @at-root .bar{
+        color:gray;
+        @at-root button{
+            color:red;
+            @at-root span{
+                color:orange;
+            }
+        }
+    }
+}
+
+// 翻译成css 
+.bar{
+    color:gray;
+}
+button{
+    color:red;
+}
+span{
+    color:orange;
 }
 ```
 ### 混合 Mixin
@@ -115,6 +137,24 @@ body{
 }
 .alert-info{
     @include alert($background:#fcf8e3,$text-color:#8a6d3b)
+}
+```
+### @content
+```
+@mixin hunhe($block){
+    display:$block;
+    @content;
+}
+
+#app{
+    @include(inline-block);
+    color:red;
+}
+
+// 翻译成css
+#app{
+    display:inline-block;
+    color:red;
 }
 ```
 ### 继承/扩展 —— inheritance
@@ -263,3 +303,53 @@ $li:6;
 }
 ```
 
+### SCSS map 
+```
+$map : (
+    $name:'uzi',
+    $age:18,
+    $location:'adc'
+)
+```
+### SCSS Maps的函数
+- map-get($map,$key)
+> 根据给定的key值，返回map中相关的值。
+- map-merge($map1,$map2)
+> 将两个map合并成一个新的map 
+- map-remove($map,$key)
+> 从map中删除一个key，返回一个新的map
+- map-keys($map)
+> 返回map中所有的key 
+- map-values($map)
+> 返回 map 中所有的 value。
+- map-has-key($map,$key)
+> 根据给定的 key 值判断 map 是否有对应的 value 值，如果有返回 true，否则返回 false。
+- keywords($args)
+> 返回一个函数的参数，这个参数可以动态的设置 key 和 value。
+
+### inspect函数
+> Maps不能转换为纯CSS。作为变量的值或参数传递给CSS函数将会导致错误，此时可以使用inspect($value) 函数以产生输出字符串。
+
+#### !default
+> 默认变量
+> 在变量赋值之前，利用`!default`为变量指定默认值。也就是说，如果在此之前变量已经赋值，那就不使用默认值了。如果没有赋值，则使用默认值。
+
+```
+$content:"uzi" !default;
+#main {
+    content:$content;
+}
+// 编译结果
+
+#main {
+    content: "shanshan"; 
+}
+```
+### @if @else
+```
+@if map-has-key($map,$key){
+    ....
+}@else{
+    ....
+}
+```
