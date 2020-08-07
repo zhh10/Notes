@@ -96,3 +96,9 @@ methods:{
 ```
 <div style="display:none;" :style="{display:block}"></div>
 ```
+### 13. Vue中如何检测数组变化?
+- 进行劫持的方式，重写数组的方法
+- 进行原型链重写，调用数组原API时，会通知依赖更新，如果新进来的值中包含着引用类型，还会继续对其进行监控。
+
+### 14. computed不需要deep？
+因为computed内部是放在模版`{{}}`里的，
