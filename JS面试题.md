@@ -132,3 +132,61 @@ undefined表示“缺少值”，就是该处应该有一个值，但是还没�
 
 1. 能保护和保存代码不受污染
 2. 因为闭包会产生不销毁的上下文，这样会导致内存消耗过大，容易造成内存泄露，影响性能。
+
+### 11. async/await如何通过同步的方式实现异步？
+内部是通过类似生成器的方式来实现的:
+```
+function A(){
+    return new Promise(()=>{
+        resolve(2)
+    },1000)
+}
+function *B(){
+    var b = yield A()
+    var c = yield A()
+    console.log(b+c)
+}
+run(B) 
+function B(func){
+    var f = func() 
+    var result = f.next() 
+    handle(result) 
+    function handle(result){
+        if(result.done === true){
+            return result;
+        }else{
+            result.then(res => {
+                var result = result.next(res)
+                handle(result)
+            })
+        }
+    }
+}
+```
+### 12. Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？
+Promise 构造函数是同步执行的，then方法是异步执行
+
+### 13. 下面的代码输出结果是多少？
+```
+Promise.resolve(1).then(2).then(Promise.resolve(3)).then(console.log)
+```
+输出1: 因为then参数一定是一个函数，如果不是函数，就当没有写，直接跳过
+
+### 14. 下面的代码输出结果是多少？
+```
+Promise.resolve().then(()=>{return new Error('error!!!')})
+                 .then(res=>{console.log('then',res})
+                 .catch(err =>{console.log('catch',err)})
+```
+输出 `then Error`,只要是`return`,就是`resolve` 只不是这里传递的是`error`对象,只要是`throw`,必然是`reject`,哪怕是`reject 1`
+
+### 15. 下面Set结构，打印出的Size值是多少?
+```
+let s = new Set() 
+s.add([1]);
+s.add([1]);
+console.log(s.size);
+// 1
+```
+因为`[1]`和`[1]`地址不同。
+
