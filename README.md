@@ -23,6 +23,7 @@
 ### 浏览器
 - [浏览器渲染原理](https://github.com/zhh10/mind-Mapping/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86.md)
 - [Http协议](https://github.com/zhh10/Notes/blob/master/Http%E5%8D%8F%E8%AE%AE.md)
+- [浏览器面试题](https://github.com/zhh10/Notes/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9D%A2%E8%AF%95%E9%A2%98.md)
 
 ### Webpack
 - [webpack思维导图](https://github.com/zhh10/mind-Mapping/blob/master/Webpack.xmind)
