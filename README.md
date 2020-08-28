@@ -14,7 +14,7 @@
 - [JavaScript思维导图](https://github.com/zhh10/mind-Mapping/blob/master/JavaScript.xmind)
 - [ES6思维导图](https://github.com/zhh10/mind-Mapping/blob/master/ES6.xmind)
 - [四种判断数据类型的方法](https://github.com/zhh10/Notes/issues/4)
-- [数组去重](https://github.com/zhh10/Notes/issues/17)
+- [数组技巧](https://github.com/zhh10/Notes/issues/17)
 - [Js严格模式](https://github.com/zhh10/Notes/issues/19)
 - [Js面试题](https://github.com/zhh10/Notes/issues/5)
 - [手写源码部分](https://github.com/zhh10/Notes/issues/6)
