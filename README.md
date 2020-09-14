@@ -5,6 +5,7 @@
 ### HTML
 - [HTML/CSS面试题](https://github.com/zhh10/Notes/issues/2)
 - [页面性能优化](https://github.com/zhh10/Notes/issues/1)
+- [Canvas](https://github.com/zhh10/Notes/issues/20)
 
 ### CSS
 - [CSS3思维导图](https://github.com/zhh10/mind-Mapping/blob/master/CSS3.xmind)
