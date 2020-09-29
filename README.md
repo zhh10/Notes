@@ -11,9 +11,6 @@
 - [CSS3思维导图](https://github.com/zhh10/mind-Mapping/blob/master/CSS3.xmind)
 - [SCSS](https://github.com/zhh10/Notes/issues/3)
 
-### 网络
-- [axios二次封装和api接口管理规范](https://github.com/zhh10/Notes/issues/22)
-
 ### JavaScript
 - [JavaScript思维导图](https://github.com/zhh10/mind-Mapping/blob/master/JavaScript.xmind)
 - [ES6思维导图](https://github.com/zhh10/mind-Mapping/blob/master/ES6.xmind)
@@ -69,3 +66,4 @@
 ### 平时学习
 - [图片懒加载及其底层原理](https://github.com/zhh10/Notes/issues/23)
 - [前端骨架屏实现](https://github.com/zhh10/Notes/issues/24)
+- [axios二次封装和api接口管理规范](https://github.com/zhh10/Notes/issues/22)
