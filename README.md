@@ -67,3 +67,4 @@
 - [图片懒加载及其底层原理](https://github.com/zhh10/Notes/issues/23)
 - [前端骨架屏实现](https://github.com/zhh10/Notes/issues/24)
 - [axios二次封装和api接口管理规范](https://github.com/zhh10/Notes/issues/22)
+- [文件上传和断点续传](https://github.com/zhh10/Notes/issues/25)
