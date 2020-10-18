@@ -63,7 +63,7 @@
 
 ### 移动端
 - [移动端布局](https://github.com/zhh10/Notes/issues/27)
-- [移动端事件]()
+- [移动端事件](https://github.com/zhh10/Notes/issues/28)
 
 ### Git
 - [Git简单操作](https://github.com/zhh10/Notes/issues/21)
