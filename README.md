@@ -68,6 +68,9 @@
 ### Git
 - [Git简单操作](https://github.com/zhh10/Notes/issues/21)
 
+### 设计模式
+- [设计模式](https://github.com/zhh10/Notes/issues/29)
+
 ### 平时学习
 - [图片懒加载及其底层原理](https://github.com/zhh10/Notes/issues/23)
 - [前端骨架屏实现](https://github.com/zhh10/Notes/issues/24)
