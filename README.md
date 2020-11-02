@@ -69,7 +69,7 @@
 - [Git简单操作](https://github.com/zhh10/Notes/issues/21)
 
 ### 服务端渲染
-- [Nuxt,js](https://github.com/zhh10/Notes/issues/30)
+- [Nuxt.js](https://github.com/zhh10/Notes/issues/30)
 
 ### 设计模式
 - [设计模式](https://github.com/zhh10/Notes/issues/29)
